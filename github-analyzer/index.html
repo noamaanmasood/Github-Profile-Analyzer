@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Profile Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>GitHub Profile Analyzer</h1>
+    <p class="subtitle">Enter a username to analyze their coding patterns</p>
+
+<div class="mode-toggle">
+  <button id="btn-single" class="mode-btn active" onclick="setMode('single')">Single user</button>
+  <button id="btn-compare" class="mode-btn" onclick="setMode('compare')">Compare two</button>
+</div>
+
+<div id="search-single" class="search-box">
+  <input type="text" id="username-input" placeholder="e.g. torvalds" />
+  <button id="analyze-btn" onclick="analyze()">Analyze</button>
+</div>
+
+<div id="search-compare" class="search-box" style="display:none;">
+  <input type="text" id="username-a" placeholder="First user" />
+  <input type="text" id="username-b" placeholder="Second user" />
+  <button id="compare-btn" onclick="compare()">Compare</button>
+</div>
+
+    <div id="error-msg" class="error" style="display:none;"></div>
+
+    <div id="loading" class="spinner-wrap" style="display:none;">
+      <div class="spinner"></div>
+      <span>Fetching profile...</span>
+    </div>
+
+    <div id="results" style="display:none;"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
