@@ -33,7 +33,7 @@ Icons: Lucide React
 Clone the repository:
 
 Bash
-git clone https://github.com/yourusername/github-profile-analyzer.git
+git clone https://github.com/noamaanmasood/github-profile-analyzer.git
 cd github-profile-analyzer
 Install dependencies:
 
