@@ -1,58 +1,55 @@
-📊 GitHub Profile Analyzer
-A sleek, data-driven dashboard that provides deep insights into any GitHub user's coding patterns, repository impact, and community influence. Beyond just basic stats, it features a personalized "Profile Roast" and activity heatmaps to tell the story behind the code.
+🛡️ GitHub Profile Analyzer
+Turn raw GitHub data into a developer narrative.
 
-🚀 Features
-The Profile Roast: A witty, AI-generated summary of a user's coding style and history based on their repository data.
+Most profile viewers just show stars and repos. GitHub Profile Analyzer uses the GitHub API to perform a deep-tissue scan of a developer's digital DNA. It calculates productivity velocity, community influence, and coding habits to assign dynamic Achievement Tags and a custom "Profile Roast" that tells the real story behind the green squares.
 
-Deep Insights: Advanced metrics including original vs. forked repo ratios, follower-to-following influence scores, and repository "reach."
+🚀 Unique Features
+🎭 Dynamic Personality Tags: Automatically assigns titles like "The Open Source Hero" or "The Early Bird" based on commit timestamps, repo originality, and community engagement.
 
-Activity Visualization:
+🔥 The Profile Roast: A witty, data-driven critique of a user's coding history, branch naming habits, and language choices.
 
-Most Active Day: Identifies the day of the week with the highest commit density.
+📊 Productivity Forensics:
 
-Most Active Hour: A 24-hour histogram showing when the developer is most productive (e.g., "Early Bird" vs. "Night Owl").
+Peak Performance Mapping: Identify the exact hour and day a developer is most active.
 
-Top Languages: A breakdown of the primary languages used across all public repositories.
+Originality Score: A deep dive into original work vs. forks to identify true creators.
 
-Popular Repos: Quick access to a user’s most-starred and impactful projects.
+Influence Ratio: A mathematical look at follower-to-following ratios and "Reach per Repo."
 
-Comparison Mode: Side-by-side analysis of two different GitHub users to compare coding patterns.
+⚔️ Comparison Mode: Battle-test two developers side-by-side to compare tech stacks, stars, and activity levels.
 
-🛠️ Tech Stack
-Frontend: React / Next.js
+📈 Language Dominance: High-precision breakdown of a user's primary languages and framework preferences.
 
-Styling: Tailwind CSS (Dark Mode focused)
+🛠️ The Tech Stack
+Framework: Next.js for a lightning-fast, SEO-friendly frontend.
 
-Data Source: GitHub GraphQL API / REST API
+Styling: Tailwind CSS with a custom dark-mode aesthetic.
 
-Charts/Visuals: Recharts or Chart.js
+Data Fetching: Integration with the GitHub REST & GraphQL APIs for real-time profile auditing.
 
-Icons: Lucide React
+Animations: Smooth transitions and data loading states powered by Framer Motion.
 
-📦 Installation & Setup
-Clone the repository:
+Deployment: Optimized for Vercel.
 
+🚦 Getting Started
+1. Installation
 Bash
-git clone https://github.com/noamaanmasood/github-profile-analyzer.git
+git clone https://github.com/your-username/github-profile-analyzer.git
 cd github-profile-analyzer
-Install dependencies:
-
-Bash
 npm install
-Set up Environment Variables:
-Create a .env file in the root directory and add your GitHub Personal Access Token to avoid rate limiting:
+2. API Configuration
+To avoid GitHub's rate limits and access all features, create a .env.local file:
 
 Code snippet
 GITHUB_TOKEN=your_personal_access_token_here
-Run the development server:
-
+3. Run Locally
 Bash
 npm run dev
-📖 How It Works
-The analyzer fetches data directly from GitHub’s API. It calculates "Insights" by iterating through the user's public repositories to determine:
+📖 How the "Tags" Work
+The analyzer doesn't just count repos; it evaluates performance metrics:
 
-Originality: The percentage of repositories created by the user vs. those forked.
+Velocity: repos updated in the last 90 days.
 
-Engagement: The average number of stars per repository.
+Longevity: Account age (e.g., "GitHub Veteran").
 
-Velocity: The number of repositories updated within the last 90 days.
+Specialization: High percentage in a single language triggers specific expert tags.
